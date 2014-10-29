@@ -161,7 +161,7 @@ Command.prototype.command = function(name, desc) {
  */
 
 Command.prototype.arguments = function (desc) {
-  this.parseArgDescription(desc.split(/ +/));
+  return this.parseArgDescription(desc.split(/ +/));
 }
 
 /**
